@@ -78,12 +78,12 @@
     #if ($themeDocFullName == '')
         #set ($themeDocFullName = "$!xwiki.getUserPreference('colorTheme')")
     #end
-## Last, just use the default theme
+    ## Last, just use the default theme
     #if ($themeDocFullName == '')
-        #set ($themeDocFullName = 'ColorThemes.DefaultColorTheme')
+        #set ($themeDocFullName = 'FlamingoThemes.Iceberg')
     #end
     #set ($themeDoc = $xwiki.getDocument($themeDocFullName))
-    #set ($themeObj = $themeDoc.getObject('ColorThemes.ColorThemeClass'))
+    #set ($themeObj = $themeDoc.getObject('FlamingoThemes.Iceberg'))
 #end
 #if ("$!themeObj" != '')
     #foreach ($prop in $themeObj.properties)
